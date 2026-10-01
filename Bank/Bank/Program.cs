@@ -4,12 +4,10 @@
     {
         static void Main(string[] args)
         {
-            BankAccount account1 = new BankAccount("Yana",100000000000);
-            BankAccount account2 = new BankAccount("Lena", 100);
-            Console.WriteLine
-                ($"account: {account1.Owner}   {account1.Balance} {account1.Number}");
-            Console.WriteLine
-                ($"account: {account2.Owner} {account2.Balance} {account2.Number}");
+            BankAccount account1 = new BankAccount("SweetieFox",100000000000);
+            BankAccount account2 = new BankAccount("Diana", 100);
+            Console.WriteLine ($"account: {account1.Owner}   {account1.Balance} {account1.Number}");
+            Console.WriteLine ($"account: {account2.Owner} {account2.Balance} {account2.Number}");
             
             account1.MakeDeposit(1000, DateTime.UtcNow, ":)");
             Console.WriteLine(account1.Balance);
@@ -17,7 +15,7 @@
             account1.MakeWithdrawal(100, DateTime.UtcNow, ":(");
             Console.WriteLine(account1.Balance);
 
-            Console.WriteLine((account1.GetAccountHistory());
+            Console.WriteLine(account1.GetAccountHistory());
 
 
             try
@@ -29,6 +27,11 @@
             {
                 Console.WriteLine(e.Message);
             }
+            InterestEarningAccount interest = new InterestEarningAccount("SweetieFox ", 100000);
+            interest.PerformMonthAndTransaction();
+
+            Console.WriteLine( interest.GetAccountHistory());
+
         }
     }
 }
