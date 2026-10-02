@@ -4,6 +4,7 @@ namespace Bank;
 
 public class BankAccount
 {
+    private readonly decimal _minimalBalace;
     private List<Transaction> _allTransactions = new List<Transaction>();
     public string Owner { get; private set; }
     public decimal Balance
@@ -20,15 +21,27 @@ public class BankAccount
     }
     public string Number { get; }
     private static int s_accountNumberSeed = 1000000000;
-    public BankAccount(string name, decimal initialBalance)
+    public BankAccount(string name, decimal initialBalance):this (name , initialBalance,0)
     {
+    }
+    public BankAccount(string name, decimal initialBalance, decimal minimalBalance) 
+    {
+    
         Owner = name; // this.Owner = name;
-        MakeDeposit(initialBalance, DateTime.UtcNow, "initial balance");
+      
         Number = s_accountNumberSeed.ToString();
         s_accountNumberSeed++;
+
+        _minimalBalace = minimalBalance;
+
+        if (initialBalance>0) 
+  MakeDeposit(initialBalance, DateTime.UtcNow, "initial balance");
     }
-    public void MakeDeposit(decimal amount, DateTime date, string note)
-    {
+
+    
+
+        public void MakeDeposit(decimal amount, DateTime date, string note)
+      {
         if (amount < 0)
         {
             throw new ArgumentOutOfRangeException
@@ -41,20 +54,31 @@ public class BankAccount
 
     public void MakeWithdrawal(decimal amount, DateTime date, string note)
     {
-        if (amount <= 0)
-        {
-            throw new ArgumentOutOfRangeException
-                    (nameof(amount), "Amount of withdawal must be positive");
-        }
+        ArgumentOutOfRangeException.ThrowIfNegativeOrZero(amount);
+        Transaction? OverdraftTransaction = CheckWithdrawalLimit(Balance - amount < _minimalBalace);
+        Transaction? withdrawal = new(-amount, date, note);
 
-        if (Balance < amount)
-        {
-            throw new InvalidOperationException
-                ("Not sufficient rubls for this withdrawal");
-        }
-
-        var withdrawal = new Transaction(-amount, date, note);
         _allTransactions.Add(withdrawal);
+
+        if (OverdraftTransaction is not null)
+            _allTransactions.Add(OverdraftTransaction);
+
+    }
+
+    //  модификатор доступа , который  означает. что его можно вызвать, только из текущего и  дочернего класса 
+   // клиент(внешний код ) данный метод вызвать не может 
+    protected virtual Transaction? CheckWithdrawalLimit(bool isOverdrawn)
+
+    {
+        if (isOverdrawn)
+        {
+            throw new InvalidOperationException("Not sufficient rubls for this withdrawal");
+
+        }
+        else
+        {
+            return default;
+        }
     }
 
     public string GetAccountHistory()
@@ -71,16 +95,18 @@ public class BankAccount
 
         }
         return report.ToString();
-
     }
 
-
     // ключевое слово virtual позволяет в дочернем классе предоставить другую реализцаию этого метода  PerformMonthAndTransaction
-
 
     public virtual void PerformMonthAndTransaction()
     { 
      
-    
+    }
+
+
+    public override string ToString()
+    {
+        return $"Owner: {Owner}\t account number: {Number} ( type of shit {GetType()})";
     }
 }

@@ -32,6 +32,19 @@
 
             Console.WriteLine( interest.GetAccountHistory());
 
+            GiftCardAccount giftcart = new GiftCardAccount("gfhgt", 0, 1000000);
+            List <BankAccount> accounts = new List<BankAccount>();
+            accounts.Add(account1);
+            accounts.Add(interest);
+            accounts.Add(giftcart);
+
+            foreach (BankAccount account in accounts)
+            {
+                Console.WriteLine(account );
+                account.PerformMonthAndTransaction();
+                Console.WriteLine(account.GetAccountHistory()); 
+            }
+
         }
     }
 }
