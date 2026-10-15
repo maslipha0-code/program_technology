@@ -1,0 +1,31 @@
+C:\Users\манюня\Desktop\c# 2026\проект разгром\HomeWork2\HomeWork2\bin\Debug\net10.0\HomeWork2.exe
+C:\Users\манюня\Desktop\c# 2026\проект разгром\HomeWork2\HomeWork2\bin\Debug\net10.0\HomeWork2.deps.json
+C:\Users\манюня\Desktop\c# 2026\проект разгром\HomeWork2\HomeWork2\bin\Debug\net10.0\HomeWork2.runtimeconfig.json
+C:\Users\манюня\Desktop\c# 2026\проект разгром\HomeWork2\HomeWork2\bin\Debug\net10.0\HomeWork2.dll
+C:\Users\манюня\Desktop\c# 2026\проект разгром\HomeWork2\HomeWork2\bin\Debug\net10.0\HomeWork2.pdb
+C:\Users\манюня\Desktop\c# 2026\проект разгром\HomeWork2\HomeWork2\obj\Debug\net10.0\HomeWork2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\манюня\Desktop\c# 2026\проект разгром\HomeWork2\HomeWork2\obj\Debug\net10.0\HomeWork2.AssemblyInfoInputs.cache
+C:\Users\манюня\Desktop\c# 2026\проект разгром\HomeWork2\HomeWork2\obj\Debug\net10.0\HomeWork2.AssemblyInfo.cs
+C:\Users\манюня\Desktop\c# 2026\проект разгром\HomeWork2\HomeWork2\obj\Debug\net10.0\HomeWork2.csproj.CoreCompileInputs.cache
+C:\Users\манюня\Desktop\c# 2026\проект разгром\HomeWork2\HomeWork2\obj\Debug\net10.0\HomeWork2.dll
+C:\Users\манюня\Desktop\c# 2026\проект разгром\HomeWork2\HomeWork2\obj\Debug\net10.0\refint\HomeWork2.dll
+C:\Users\манюня\Desktop\c# 2026\проект разгром\HomeWork2\HomeWork2\obj\Debug\net10.0\HomeWork2.pdb
+C:\Users\манюня\Desktop\c# 2026\проект разгром\HomeWork2\HomeWork2\obj\Debug\net10.0\HomeWork2.genruntimeconfig.cache
+C:\Users\манюня\Desktop\c# 2026\проект разгром\HomeWork2\HomeWork2\obj\Debug\net10.0\ref\HomeWork2.dll
+C:\Users\манюня\Desktop\c# 2026\проект разгром\HomeWork2\HomeWork2\obj\Debug\net10.0\HomeWork2.csproj.Up2Date
+C:\Users\манюня\Desktop\c# 2026\program_technology\HomeWork2\HomeWork2\bin\Debug\net10.0\HomeWork2.exe
+C:\Users\манюня\Desktop\c# 2026\program_technology\HomeWork2\HomeWork2\bin\Debug\net10.0\HomeWork2.deps.json
+C:\Users\манюня\Desktop\c# 2026\program_technology\HomeWork2\HomeWork2\bin\Debug\net10.0\HomeWork2.runtimeconfig.json
+C:\Users\манюня\Desktop\c# 2026\program_technology\HomeWork2\HomeWork2\bin\Debug\net10.0\HomeWork2.dll
+C:\Users\манюня\Desktop\c# 2026\program_technology\HomeWork2\HomeWork2\bin\Debug\net10.0\HomeWork2.pdb
+C:\Users\манюня\Desktop\c# 2026\program_technology\HomeWork2\HomeWork2\obj\Debug\net10.0\HomeWork2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\манюня\Desktop\c# 2026\program_technology\HomeWork2\HomeWork2\obj\Debug\net10.0\HomeWork2.AssemblyInfoInputs.cache
+C:\Users\манюня\Desktop\c# 2026\program_technology\HomeWork2\HomeWork2\obj\Debug\net10.0\HomeWork2.AssemblyInfo.cs
+C:\Users\манюня\Desktop\c# 2026\program_technology\HomeWork2\HomeWork2\obj\Debug\net10.0\HomeWork2.csproj.CoreCompileInputs.cache
+C:\Users\манюня\Desktop\c# 2026\program_technology\HomeWork2\HomeWork2\obj\Debug\net10.0\HomeWork2.sourcelink.json
+C:\Users\манюня\Desktop\c# 2026\program_technology\HomeWork2\HomeWork2\obj\Debug\net10.0\HomeWork2.dll
+C:\Users\манюня\Desktop\c# 2026\program_technology\HomeWork2\HomeWork2\obj\Debug\net10.0\refint\HomeWork2.dll
+C:\Users\манюня\Desktop\c# 2026\program_technology\HomeWork2\HomeWork2\obj\Debug\net10.0\HomeWork2.pdb
+C:\Users\манюня\Desktop\c# 2026\program_technology\HomeWork2\HomeWork2\obj\Debug\net10.0\HomeWork2.genruntimeconfig.cache
+C:\Users\манюня\Desktop\c# 2026\program_technology\HomeWork2\HomeWork2\obj\Debug\net10.0\ref\HomeWork2.dll
+C:\Users\манюня\Desktop\c# 2026\program_technology\HomeWork2\HomeWork2\obj\Debug\net10.0\HomeWork2.csproj.Up2Date
